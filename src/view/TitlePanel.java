@@ -1,0 +1,26 @@
+package view;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class TitlePanel extends JPanel {
+	private static final long serialVersionUID = 1266655438532045137L;
+	private JLabel heading;
+	private Font font;
+	
+	public TitlePanel() {
+		font = new Font("SansSerif", Font.BOLD, 16);
+		heading = new JLabel("Dice Game");
+		heading.setFont(font);
+		heading.setForeground(new Color(255,215,0));
+		
+		add(heading);
+		
+		// panel settings
+		setBackground(Color.BLACK);
+
+	}
+}
